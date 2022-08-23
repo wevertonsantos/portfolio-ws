@@ -1,5 +1,11 @@
-*{list-style: none; box-sizing: border-box; padding: 0; margin: 0;}
+*{list-style: none; box-sizing: border-box; padding: 0; margin: 0; font-family: 'Alumni Sans Pinstripe', sans-serif;}
 a{text-decoration: none; cursor: pointer;}
+
+/* Container */
+
+#container{
+    background: linear-gradient(80deg,rgba(204, 204, 204, 0.35) 58%, rgba(0, 0, 0, 0) 60.2%);
+}
 
 /* Header */
 
@@ -20,49 +26,80 @@ header #lista{
 }
 
 header a{
+    font-size: 1.5em;
     padding-left: 20px;
-    padding-top: 25px;
+    padding-top: 21px;
     color: white;
 }
 
 header #nome{
+    font-family: 'Audiowide', cursive;
     padding-top: 20px;
 }
 
 /* HERO */
 
 #hero{
-    position: relative;
-    display: flex;
-    align-items: center;
     min-height: 100vh;
+    display: flex;
     justify-items: center;
     align-items: flex-start;
     flex-direction: column;
 }
 
 #hero .bemvindo{
-    padding: 400px 70px;
+    top: 350px;
+    left: 150px;
     position: absolute;
     font-size: 4em;
 }
 
 #hero .hello{
-    padding: 300px 70px;
+    top: 300px;
+    left: 150px;
     position: absolute;
     font-size: 4em;
 }
 
 #hero .iam {
-    padding: 500px 70px;
+    top: 380px;
+    left: 150px;
     position: absolute;
-    font-size: 6.5em;
+    font-size: 9em;
 }
 
 #hero .pc{
-    height: 600px;
-    border-radius: 50px 50px 50px 50px;
-    top: 100px;
+    height: 400px;
+    top: 220px;
     position: relative;
-    left: 950px;
+    left: 900px;
+}
+
+span{
+    color: grey;
+}
+
+/* Sobre */
+
+#sobre {
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#sobre h1{
+    top: 50px;
+    position: relative;
+    font-size: 3em;
+}
+
+#sobre p{
+    position: relative;
+    padding: 100px 100px;
+    top: 100px;
+    font-size: 2.5em;
 }
