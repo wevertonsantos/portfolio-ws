@@ -4,20 +4,19 @@ a{text-decoration: none; cursor: pointer;}
 /* Container */
 
 #container{
-    background: linear-gradient(80deg,rgba(204, 204, 204, 0.35) 58%, rgba(0, 0, 0, 0) 60.2%);
+   background-color: rgba(204, 204, 204, 0.35);
 }
 
 /* Header */
 
 header{
-    width: 100%;
+    position: relative;
+    left: 650px;
+    border-bottom: 100px;
+    width: 155px;
     position: fixed;
-    height: 70px;
+    height: 100px;
     color: white;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 header #lista{
@@ -34,50 +33,58 @@ header a{
 
 header #nome{
     font-family: 'Audiowide', cursive;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: 4em;
 }
 
 /* HERO */
 
 #hero{
+    color: grey;
     min-height: 100vh;
     display: flex;
     justify-items: center;
     align-items: flex-start;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
 #hero .bemvindo{
     top: 350px;
-    left: 150px;
+    left: 100px;
     position: absolute;
     font-size: 4em;
 }
 
 #hero .hello{
     top: 300px;
-    left: 150px;
+    left: 100px;
     position: absolute;
     font-size: 4em;
 }
 
 #hero .iam {
     top: 380px;
-    left: 150px;
+    left: 100px;
     position: absolute;
     font-size: 9em;
 }
 
-#hero .pc{
-    height: 400px;
-    top: 220px;
-    position: relative;
-    left: 900px;
+span{
+    color: white;
 }
 
-span{
-    color: grey;
+#hero button{
+    font-size: 3em;
+    border: black;
+    left: 180px;
+    top: 150px;
+    position: relative;
+    width: 200px;
+    height: 500px;
+    color: black;
 }
+
+
 
 /* Sobre */
 
