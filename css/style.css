@@ -1,0 +1,68 @@
+*{list-style: none; box-sizing: border-box; padding: 0; margin: 0;}
+a{text-decoration: none; cursor: pointer;}
+
+/* Header */
+
+header{
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header #lista{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    padding-left: 20px;
+    padding-top: 25px;
+    color: white;
+}
+
+header #nome{
+    padding-top: 20px;
+}
+
+/* HERO */
+
+#hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#hero .bemvindo{
+    padding: 400px 70px;
+    position: absolute;
+    font-size: 4em;
+}
+
+#hero .hello{
+    padding: 300px 70px;
+    position: absolute;
+    font-size: 4em;
+}
+
+#hero .iam {
+    padding: 500px 70px;
+    position: absolute;
+    font-size: 6.5em;
+}
+
+#hero .pc{
+    height: 600px;
+    border-radius: 50px 50px 50px 50px;
+    top: 100px;
+    position: relative;
+    left: 950px;
+}
