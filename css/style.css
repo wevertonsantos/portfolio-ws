@@ -4,7 +4,7 @@ a{text-decoration: none; cursor: pointer;}
 /* Container */
 
 #container{
-    background-color: rgba(102, 153, 204, 0.40);
+    background: linear-gradient(210deg,rgb(1, 48, 61) 40%, white 220%);
 }
 
 /* Header */
@@ -72,17 +72,21 @@ header #nome{
 }
 
 #hero-text .iam span{
-    color: rgba(102, 153, 204);
+    color: rgb(0, 242, 255);
 }
 
 /* Texto (Desenvolvedor) */
 #dev{
-    color: rgba(102, 153, 204);
-    font-size: 3em;
-    top: 170px;
-    left: 600px;
+    color: rgb(255,255,255);
+    font-size: 4em;
+    top: 140px;
+    left: 610px;
     bottom: 10px;
     position: relative;
+}
+
+#dev span {
+    color: rgb(0, 242, 255);
 }
 
 /* Hero Menu */
@@ -109,10 +113,16 @@ i{
 /* Sobre Mim */
 
 #hero-menu .sobre .txt-sbr{
+    color: white;
     right: 30px;
     top: 150px;
     position: relative;
-    font-size: 2em;
+    font-size: 1em;
+}
+
+#hero-menu .sobre .txt-sbr:hover{
+    cursor: pointer;
+    color: rgb(0, 242, 255);
 }
 
 /* Projetos */
@@ -122,26 +132,38 @@ i{
 }
 
 #hero-menu .projetos img{
-    right: 100px;
+    bottom: 30px;
+    right: 150px;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 450px;
+    width: 450px;
 }
 
 #hero-menu .projetos .txt-prj{
-    top: 30px;
-    font-size: 2em;
+    color: white;
+    bottom: 30px;
+    font-size: 1em;
     position: relative;
-    right: 55px;
+    right: 25px;
+}
+#hero-menu .projetos .txt-prj:hover{
+    cursor: pointer;
+    color: rgb(0, 242, 255);
 }
 
 /* Contatos */
 
 #hero-menu .contatos .txt-cnt{
+    color: white;
     position: relative;
     top: 150px;
-    left: 30px;
-    font-size: 2em;
+    left: 80px;
+    font-size: 1em;
 }
+
+#hero-menu .contatos .txt-cnt:hover{
+    color: rgb(0, 242, 255);
+}
+
 
 
