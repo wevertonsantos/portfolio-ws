@@ -40,6 +40,7 @@ header #nome{
 /* Hero */
 
 #hero{
+    position: relative;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -64,19 +65,65 @@ header #nome{
     font-size: 3em;
 }
 
-#hero-text .iam {
+#hero-text .name {
     top: 380px;
     left: 100px;
     position: absolute;
     font-size: 7em;
 }
 
-#hero-text .iam span{
+#hero-text .name{
+    animation: piscaName 4s infinite;
     color: rgb(0, 242, 255);
+}
+
+#hero-text .name:hover{
+    color: rgb(255,255,255);
+}
+
+#hero-text .bemvindo:hover{
+    color: rgb(0, 242, 255);
+}
+
+#hero-text .hello:hover{
+    color: rgb(0, 242, 255);
+}
+
+
+#hero-text:after {
+    position: relative;
+    top: 380px;
+    left: 640px;
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+    font-size: 7em;
+}
+
+/* Animação aplicada */
+
+@keyframes pisca{
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes piscaName{
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 /* Texto (Desenvolvedor) */
 #dev{
+    width: 500px;
     color: rgb(255,255,255);
     font-size: 4em;
     top: 120px;
