@@ -4,7 +4,7 @@ a{text-decoration: none; cursor: pointer;}
 /* Container */
 
 #container{
-   background-color: rgba(102, 102, 204, 0.35);
+    background-color: rgba(102, 153, 204, 0.40);
 }
 
 /* Header */
@@ -72,7 +72,17 @@ header #nome{
 }
 
 #hero-text .iam span{
-    color: rgba(102, 102, 204, 0.45);
+    color: rgba(102, 153, 204);
+}
+
+/* Texto (Desenvolvedor) */
+#dev{
+    color: rgba(102, 153, 204);
+    font-size: 3em;
+    top: 170px;
+    left: 600px;
+    bottom: 10px;
+    position: relative;
 }
 
 /* Hero Menu */
@@ -80,9 +90,7 @@ header #nome{
 #hero-menu{
     display: flex;
     justify-content: space-around;
-    font-size: 3em;
     border: black;
-    left: 170px;
     top: 250px;
     position: relative;
     width: 610px;
@@ -94,101 +102,46 @@ header #nome{
     width: 200px;
 }
 
+i{
+    color: white;
+}
+
 /* Sobre Mim */
 
-#hero-menu h1{
-    font-size: 1em;
-}
-
-#hero-menu .sobre{
-    background-color: red;
-    text-align: center;
-}
-
-#hero-menu .sobre img{
+#hero-menu .sobre .txt-sbr{
+    right: 30px;
+    top: 150px;
     position: relative;
-    top: 20px;
-    height: 150px;
-    width: 150px;
-}
-
-#hero-menu .sobre h1{
-    position: relative;
-    font-size: 1em;
-}
-
-#hero-menu button{
-    margin-top: 70px;
-    border: none;
-    cursor: pointer;
-}
-
-#hero-menu .sobre .arrow-sbr{
-    padding-right: 20px;
-    text-align: end;
-    color:  rgba(102, 102, 204);
-    position: relative;
-    bottom: 20px;
-    height: 50px;
-    width: 150px;
-    background-color: white;
-}
-
-#hero-menu .sobre .more-sbr{
-    background-color: white;
-    color: rgba(102, 102, 204);
-    position: relative;
-    right: 20px;
-    bottom: 137.5px;
-    border: black;
-    height: 45px;
-    width: 105px;
-    padding-right: 30px;
-    padding-bottom: 2px;
-    font-size: 0.4em;
+    font-size: 2em;
 }
 
 /* Projetos */
 
 #hero-menu .projetos{
-    background-color: black;
+    text-align: center;
+}
+
+#hero-menu .projetos img{
+    right: 100px;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+#hero-menu .projetos .txt-prj{
+    top: 30px;
+    font-size: 2em;
+    position: relative;
+    right: 55px;
 }
 
 /* Contatos */
 
-#hero-menu .contatos{
-    background-color: red;
-
-}
-
-#hero-menu .contatos p{
-    text-align: center;
-    background-color: red;
+#hero-menu .contatos .txt-cnt{
     position: relative;
-    font-size: 1em;
-}
-
-#hero-menu .contatos .arrow-cnts{
-    left: 25px;
-    position: relative;
-    text-align: end;
-    color:  rgba(102, 102, 204);
-    height: 50px;
-    width: 150px;
     top: 150px;
-    padding-right: 20px;
-}
-
-#hero-menu .contatos .more-cnts{
-    position: relative;
-    text-align: end;
-    color:  rgba(102, 102, 204);
-    height: 45px;
-    width: 105px;
-    font-size: 0.4em;
-    padding-right: 40px;
-    top: 33px;
-    left: 28px;
+    left: 30px;
+    font-size: 2em;
 }
 
 
