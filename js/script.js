@@ -1,4 +1,4 @@
-/* Animação nome */
+/* Animação texto com nome */
 
 function textoMovendo(texto){
 
@@ -19,6 +19,7 @@ const textoWeverton = document.querySelector('.name');
 textoMovendo(textoOla);
 textoMovendo(textoSejaBem);
 textoMovendo(textoWeverton);
+
 
 /*  */
 

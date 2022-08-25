@@ -123,17 +123,24 @@ header #nome{
 
 /* Texto (Desenvolvedor) */
 #dev{
-    width: 500px;
     color: rgb(255,255,255);
-    font-size: 4em;
-    top: 120px;
-    left: 900px;
+    font-size: 3.5em;
+    top: 150px;
+    left: 890px;
     bottom: 10px;
     position: relative;
 }
 
+#dev:hover{
+    color: rgb(0, 242, 255);
+}
+
 #dev span {
     color: rgb(0, 242, 255);
+}
+
+#dev span:hover{
+    color: rgb(255,255,255);
 }
 
 /* Imagem Menu */
@@ -167,7 +174,7 @@ i{
     color: white;
 }
 
-/* Sobre Mim */
+/* Botão Sobre Mim */
 
 #hero-menu .sobre .txt-sbr{
     color: white;
@@ -214,5 +221,65 @@ i{
     color: rgb(0, 242, 255);
 }
 
+/* Hero Sobre Mim */
 
+#hero-sobre {
+    border: 1px solid red;
+    color: white;
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+}
+
+#hero-sobre .texto-sbr{
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    height: 50vh;
+}
+
+#hero-sobre .texto-sbr h1{
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+
+#hero-sobre .texto-sbr h3{
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+
+#hero-sobre .texto-sbr p{
+    text-align: justify;
+    width: 800px;
+    font-size: 1.5em;
+}
+
+#hero-sobre .imagens-sbr{
+    padding-left: 300px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 1;
+    align-self: center;
+    height: 50vh;
+}
+
+#hero-sobre .botao-sbr{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: flex-start;
+    height: 30px;
+    width: 100px;
+}
+
+#hero-sobre .botao-sbr button{
+    height: 30px;
+    width: 100px;
+}
 
