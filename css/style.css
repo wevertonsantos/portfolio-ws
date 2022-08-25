@@ -1,13 +1,13 @@
 *{list-style: none; box-sizing: border-box; padding: 0; margin: 0; font-family: 'Alumni Sans Pinstripe', sans-serif;}
 a{text-decoration: none; cursor: pointer;}
 
-/* Container */
+/* --------------------------- Home ---------------------------- */
 
 #container{
     background: linear-gradient(210deg,rgb(1, 48, 61) 40%, white 220%);
 }
 
-/* Header */
+/* --------------------------- Header ---------------------------- */
 
 header{
     position: relative;
@@ -37,7 +37,9 @@ header #nome{
     font-size: 4em;
 }
 
-/* Hero */
+/* --------------------------- Home ---------------------------- */
+
+/* Home Hero */
 
 #hero{
     position: relative;
@@ -49,7 +51,7 @@ header #nome{
     justify-content: space-around;
 }
 
-/* Hero Texto */
+/* Home Hero Texto */
 
 #hero-text .bemvindo{
     top: 350px;
@@ -101,7 +103,7 @@ header #nome{
     font-size: 7em;
 }
 
-/* Animação aplicada */
+/* Home Animação aplicada */
 
 @keyframes pisca{
     0%, 100% {
@@ -121,11 +123,11 @@ header #nome{
     }
 }
 
-/* Texto (Desenvolvedor) */
+/* Home Texto (Desenvolvedor) */
 #dev{
     color: rgb(255,255,255);
     font-size: 3.5em;
-    top: 150px;
+    top: 130px;
     left: 890px;
     bottom: 10px;
     position: relative;
@@ -143,7 +145,7 @@ header #nome{
     color: rgb(255,255,255);
 }
 
-/* Imagem Menu */
+/* Home Imagem Menu */
 
 #hero img{
     position: relative;
@@ -153,7 +155,7 @@ header #nome{
     left: 500px;
 }
 
-/* Hero Menu */
+/* Home Menu */
 
 #hero-menu{
     display: flex;
@@ -174,11 +176,10 @@ i{
     color: white;
 }
 
-/* Botão Sobre Mim */
+/* Home Botão Sobre Mim */
 
 #hero-menu .sobre .txt-sbr{
     color: white;
-    right: 30px;
     top: 150px;
     position: relative;
     font-size: 1em;
@@ -189,7 +190,7 @@ i{
     color: rgb(0, 242, 255);
 }
 
-/* Projetos */
+/* Home Botão Projetos */
 
 #hero-menu .projetos{
     text-align: center;
@@ -207,7 +208,7 @@ i{
     color: rgb(0, 242, 255);
 }
 
-/* Contatos */
+/* Home Botão Contatos */
 
 #hero-menu .contatos .txt-cnt{
     color: white;
@@ -221,6 +222,8 @@ i{
     color: rgb(0, 242, 255);
 }
 
+/* --------------------------- Sobre Mim ---------------------------- */
+
 /* Hero Sobre Mim */
 
 #hero-sobre {
@@ -233,6 +236,7 @@ i{
 }
 
 #hero-sobre .texto-sbr{
+    padding-top: 50px;
     align-self: center;
     grid-row-start: 1;
     grid-row-end: 4;
@@ -258,6 +262,8 @@ i{
     font-size: 1.5em;
 }
 
+/* Hero Sobre mim - Imagens */
+
 #hero-sobre .imagens-sbr{
     padding-left: 300px;
     grid-row-start: 1;
@@ -267,6 +273,8 @@ i{
     align-self: center;
     height: 50vh;
 }
+
+/* Hero Sobre mim - Botão */
 
 #hero-sobre .botao-sbr{
     grid-column-start: 2;
@@ -281,5 +289,35 @@ i{
 #hero-sobre .botao-sbr button{
     height: 30px;
     width: 100px;
+}
+
+/* Hero Sobre mim - Menu Home/Projetos/Contatos */
+
+#sobre-rodape{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-self: end;
+    align-self: center;
+}
+
+#sobre-rodape a{
+    color: white;
+}
+
+#sobre-rodape a:hover{
+    color: rgb(0, 242, 255);
+}
+
+#sobre-rodape .home-sbr{
+    margin-right: 30px;
+}
+
+#sobre-rodape .projetos-sbr{
+    margin-right: 30px;
+}
+
+#sobre-rodape .contatos-sbr{
+    margin-right: 30px;
 }
 
