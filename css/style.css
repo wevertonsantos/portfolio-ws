@@ -1,10 +1,11 @@
-*{list-style: none; box-sizing: border-box; padding: 0; margin: 0; font-family: 'Poppins', sans-serif;}
+*{box-sizing: border-box; padding: 0; margin: 0; font-family: 'Poppins', sans-serif;}
 a{text-decoration: none; cursor: pointer;}
 
 /* --------------------------- Home ---------------------------- */
 
 #container{
-    background: linear-gradient(210deg,rgb(1, 48, 61) 40%, white 220%);
+    background: linear-gradient(210deg,rgb(1, 48, 61) 80%, white 250%);
+
 }
 
 /* --------------------------- Header ---------------------------- */
@@ -235,33 +236,58 @@ i{
 }
 
 #hero-sobre .texto-sbr{
+    margin-top: 70px;
+    font-size: 0.8em;
     align-self: center;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 #hero-sobre .texto-sbr h1{
-    padding-bottom: 40px;
-    font-size: 2em;
-}
-
-#hero-sobre .texto-sbr h3{
-    font-size: 1em;
-    padding-bottom: 5px;
-}
-
-#hero-sobre .texto-sbr .skill-intro{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
+    padding-bottom: 30px;
+    font-size: 1.5em;
 }
 
 #hero-sobre .texto-sbr .intro{
+    font-weight: bold;
     text-align: start;
     width: 500px;
-    font-size: 1em;
+}
+
+#hero-sobre .texto-sbr .intro .p01{
+    margin-bottom: 10px;
+}
+
+#hero-sobre .img-intro{
+    left: 120vh;
+    top: 135vh;
+    position: absolute;
+    border: 2px solid rgb(0, 242, 255);
+    border-radius: 5px 5px 5px 5px;
+    width: 220px;
+    height: 240px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#hero-sobre img{
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    width: 220px;
+    height: 240px;
+}
+
+
+#hero-sobre .texto-sbr .skill-intro{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 
 #hero-sobre .texto-sbr .skill{
@@ -272,9 +298,6 @@ i{
     height: 150px;
 }
 
-#hero-sobre .texto-sbr .skill .front{ 
-}
-
 #hero-sobre .texto-sbr .skill .back{
     padding-left: 60px;
 }
@@ -283,9 +306,8 @@ i{
 
 #hero-sobre .botao-sbr{
     grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-column-end: 3;
+    grid-row-start: 3;
     align-self: flex-start;
     height: 30px;
     width: 100px;
@@ -317,6 +339,7 @@ i{
 #sobre-rodape{
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 4;
     display: flex;
     justify-self: end;
     align-self: center;
