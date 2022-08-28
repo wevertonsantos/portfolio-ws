@@ -12,7 +12,7 @@ a{text-decoration: none; cursor: pointer;}
 
 header{
     position: relative;
-    left: 650px;
+    left: 660px;
     border-bottom: 100px;
     width: 155px;
     position: fixed;
@@ -26,7 +26,7 @@ header #lista{
 }
 
 header a{
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-left: 20px;
     padding-top: 21px;
     color: white;
@@ -35,7 +35,19 @@ header a{
 header #nome{
     font-family: 'Poppins', cursive;
     padding-top: 10px;
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+header #nome:after{
+    position: relative;
+    right: 10px;
+    content: '/>';
+}
+
+header #nome::before{
+    position: relative;
+    left: 7px;
+    content: '<';
 }
 
 /* --------------------------- Home ---------------------------- */
@@ -92,10 +104,9 @@ header #nome{
     color: rgb(0, 242, 255);
 }
 
-
 #hero-text:after {
     position: relative;
-    top: 377px;
+    top: 378px;
     left: 620px;
     content: '|';
     margin-left: 5px;
@@ -257,7 +268,7 @@ i{
 }
 
 #hero-sobre .texto-sbr .intro .p01{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #hero-sobre .img-intro{
@@ -285,7 +296,7 @@ i{
 
 
 #hero-sobre .texto-sbr .skill-intro{
-    padding-top: 10px;
+    margin-top: 20px;
     padding-bottom: 10px;
     
 }
@@ -364,4 +375,32 @@ i{
 
 #sobre-rodape .contatos-sbr{
     margin-right: 30px;
+}
+
+/* --------------------------- Projetos ---------------------------- */
+
+#hero-projetos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+#hero-projetos .text-prj{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: 10vh;
+}
+
+#hero-projetos .catalogo{
+    margin-left: 8vh;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    background-color: white;
+    height: 70vh;
+    width: 150vh;
+    margin-bottom: 20px;
 }
