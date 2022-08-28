@@ -247,8 +247,7 @@ i{
 }
 
 #hero-sobre .texto-sbr{
-    margin-top: 70px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     align-self: center;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -257,8 +256,8 @@ i{
 }
 
 #hero-sobre .texto-sbr h1{
-    padding-bottom: 30px;
-    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 #hero-sobre .texto-sbr .intro{
@@ -343,38 +342,6 @@ i{
 #hero-sobre .botao-sbr i{
     padding-right: 10px;
     color: white;
-}
-
-/* Hero Sobre mim - Rodape Menu Home/Projetos/Contatos */
-
-#sobre-rodape{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    display: flex;
-    justify-self: end;
-    align-self: center;
-}
-
-#sobre-rodape a{
-    font-size: 0.5em;
-    color: white;
-}
-
-#sobre-rodape a:hover{
-    color: rgb(0, 242, 255);
-}
-
-#sobre-rodape .home-sbr{
-    margin-right: 30px;
-}
-
-#sobre-rodape .projetos-sbr{
-    margin-right: 30px;
-}
-
-#sobre-rodape .contatos-sbr{
-    margin-right: 30px;
 }
 
 /* --------------------------- Projetos ---------------------------- */
