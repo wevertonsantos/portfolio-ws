@@ -11,18 +11,14 @@ a{text-decoration: none; cursor: pointer;}
 /* --------------------------- Header ---------------------------- */
 
 header{
-    position: relative;
-    left: 660px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
     border-bottom: 100px;
-    width: 155px;
+    width: 100%;
     position: fixed;
     height: 100px;
     color: white;
-}
-
-header #lista{
-    display: flex;
-    justify-content: space-between;
 }
 
 header a{
@@ -33,6 +29,8 @@ header a{
 }
 
 header #nome{
+    position: relative;
+    left: 84vh;
     font-family: 'Poppins', cursive;
     padding-top: 10px;
     font-size: 2em;
@@ -49,6 +47,9 @@ header #nome::before{
     left: 7px;
     content: '<';
 }
+
+
+
 
 /* --------------------------- Home ---------------------------- */
 
@@ -88,7 +89,8 @@ header #nome::before{
 }
 
 #hero-text .name{
-    animation: piscaName 4s infinite;
+    opacity: 0;
+    animation: piscaName 10s linear forwards;
     color: rgb(0, 242, 255);
 }
 
@@ -111,7 +113,7 @@ header #nome::before{
     content: '|';
     margin-left: 5px;
     opacity: 1;
-    animation: pisca .5s infinite;
+    animation: pisca .5s ease-in-out infinite;
     font-size: 4em;
 }
 
@@ -127,10 +129,10 @@ header #nome::before{
 }
 
 @keyframes piscaName{
-    0%, 100% {
-        opacity: 1;
+    to {
+        opacity: 1;;
     }
-    50%{
+    from{
         opacity: 0;
     }
 }
@@ -191,6 +193,7 @@ i{
 /* Home Botão Sobre Mim */
 
 #hero-menu .sobre .txt-sbr{
+    animation: menuFly 1s ease-in-out alternate infinite;
     color: white;
     top: 150px;
     position: relative;
@@ -198,9 +201,22 @@ i{
 }
 
 #hero-menu .sobre .txt-sbr:hover{
+    animation: animationMenu 2s ease-in-out infinite alternate;
     cursor: pointer;
     color: rgb(0, 242, 255);
 }
+
+@keyframes animationMenu{
+    from{
+        text-shadow: 10px 1px 1px white;
+        font-size: 0.5em;
+    }
+    to{
+        font-size: 0.7em;
+    }
+}
+
+
 
 /* Home Botão Projetos */
 
@@ -216,6 +232,7 @@ i{
     top: 400px;
 }
 #hero-menu .projetos .txt-prj:hover{
+    animation: animationMenu 2s ease-in-out infinite alternate;
     cursor: pointer;
     color: rgb(0, 242, 255);
 }
@@ -231,7 +248,27 @@ i{
 }
 
 #hero-menu .contatos .txt-cnt:hover{
+    animation: animationMenu 2s ease-in-out infinite alternate;
     color: rgb(0, 242, 255);
+}
+
+#hero-menu .seta{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#hero .seta{
+    animation: setaMovimenta 0.5s ease-in-out alternate infinite;
+    font-size: 2em;
+    position: relative;
+    top: 90vh;
+    right: 89vh;
+}
+
+@keyframes setaMovimenta{
+    to{
+        transform: translateY(30px);
+    }
 }
 
 /* --------------------------- Sobre Mim ---------------------------- */
@@ -239,6 +276,7 @@ i{
 /* Hero Sobre Mim */
 
 #hero-sobre {
+    padding-bottom: 100px;
     color: white;
     height: 100vh;
     display: grid;
