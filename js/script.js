@@ -21,5 +21,9 @@ textoMovendo(textoSejaBem);
 textoMovendo(textoWeverton);
 
 
-/*  */
+/* Scroll */
+
+function scrollDown(){
+    window.scrollTo(0,800,'smooth');
+}
 
